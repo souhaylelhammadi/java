@@ -6,7 +6,7 @@ public class CalculsSimples {
         boolean coursTermine = false;
 
         System.out.println("Nombre d'étudiants : " + nombreEtudiants);
-        System.out.println("Prix du livre : " + prixLivre + " MAD");
+        System.out.println("Prix du livre : " + prixLivre );
         System.out.println("Lettre préférée : " + lettrePreferee);
         System.out.println("Cours terminé ? " + coursTermine);
     }

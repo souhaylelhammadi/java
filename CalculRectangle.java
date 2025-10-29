@@ -16,8 +16,5 @@ public class CalculRectangle {
         System.out.println("Largeur  : " + largeur);
         System.out.println("Surface  : " + surface);
         System.out.println("Périmètre: " + perimetre);
-
-        
-
     }
 }
