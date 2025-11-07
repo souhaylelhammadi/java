@@ -13,16 +13,20 @@ public class Convertisseur  {
             System.out.print("Votre choix : ");
             
             choix = input.nextInt();
-
+            // Vérifier si l'utilisateur veut quitter le programme
             if (choix == 0) {
                 System.out.println("Merci et au revoir !");
                 break;
+            }else if (choix < 0 || choix > 3) {
+                System.out.println("Option non disponible. Veuillez réessayer.");
+                continue;
             }
+            // Demander la valeur à convertir
 
             System.out.print("Entrez la valeur à convertir : ");
             double valeur = input.nextDouble();
             double resultat;
-
+            // Effectuer la conversion en fonction du choix de l'utilisateur
             switch (choix) {
                 case 1:
                     resultat = valeur * 2.2046;
@@ -41,9 +45,9 @@ public class Convertisseur  {
                     break;
             }
 
-        } while (choix != 0);
+        } while (choix != 0); // Fin de la boucle do-while
 
-        input.close();
+        input.close(); // Fermer le scanner
         
 
     }
